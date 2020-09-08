@@ -33,7 +33,10 @@ public synchronized void recogerMensajes()
             buffer.darMensajes().set(i, actual); 
             Cliente cliente =actual.darCliente();
             System.out.println("En el servidor: " + this.darId() + " se notifica al cliente : " + cliente.darId() + " del mensaje: " + actual.darId());
-            cliente.notifyAll();
+            
+            synchronized (cliente) {
+                cliente.notifyAll();	
+			}
         }
         
         yield();

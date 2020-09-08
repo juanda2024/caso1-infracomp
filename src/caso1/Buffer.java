@@ -41,8 +41,9 @@ public class Buffer {
 
 	public synchronized void esperarMensaje(Cliente pCliente, Mensaje mensaje) {
 		try {
-			pCliente.wait();
-			System.out.println("- - - - - - - -  - -- ");
+			synchronized (pCliente) {
+				pCliente.wait();	
+			}
 			recogerMensaje(pCliente, mensaje);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -62,6 +63,7 @@ public class Buffer {
 				pcliente.quitarMensaje();
 				mensajes.remove(mensaje_actual);
 				capacidad_actual--;
+				System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - -");
 			}
 		}
 	}

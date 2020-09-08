@@ -38,7 +38,9 @@ public class Cliente extends Thread {
 		this.cantidad_mensajes_procesados++;
 		if(this.cantidad_mensajes == this.cantidad_mensajes_procesados)
 		{
-			System.out.println("el cliente con id:" + id + "ya terminó");
+			System.out.println("----------------------");
+			System.out.println("el cliente con id: " + id + " ya terminó");
+			System.out.println("----------------------");
 		}
 	}
 
