@@ -1,12 +1,12 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación  
+ * Universidad de los Andes (Bogota - Colombia)
+ * Departamento de Ingenieria de Sistemas y Computacion  
  *
  * Infraestructura computacional
  * Ejercicio: caso 1
- * Autor:Miguel Parra
- * Autor: Juan David Monsalve
+ * Autor: Miguel Parra - 201814632
+ * Autor: Juan David Monsalve - 201814295
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 package caso1;
@@ -32,12 +32,12 @@ public class Main {
 	 * numero de clientes, mensajes, servidores y capacidad del buffer. Ademas debe crear e inicializar los 
 	 * threads respectivos. 
 	 * <b>pre: </b> debe existir el archivo docs/configuration.properties con el fromato
-	 * clientes.numero=#
-	 * clientes.mensajes=#
-	 * servidor.numero=#
-	 * buffer.size=#
+	 * clientes.numero = #. numero determinado en el archivo properties
+	 * clientes.mensajes = #. numero determinado en el archivo properties
+	 * servidor.numero = #. numero determinado en el archivo properties
+	 * buffer.size = #. numero determinado en el archivo properties
 	 * @param args
-	 * <b>post: </b> Se creo el buffer con un tamaño y se crearon e inicializaron los threads de cliente y servidor
+	 * <b>post: </b> Se creo el buffer con un tamanio y se crearon e inicializaron los threads de cliente y servidor
 	 */
 	public static void main(String[] args) {
 
